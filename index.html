@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Consulta Clima</title>
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
+        <script src="./arquivos/script.js"></script>
+        <link rel="stylesheet" href="./arquivos/styles.css">
+    </head>
+
+    <body>
+        <h2>Consulta Clima - Brasil</h2>
+        <p>Para consultar, insira a sua cidade!</p>
+        <div class="card">
+            <br>
+            <label for="cidade" class="label">Cidade:</label>
+            <input placeholder="Insira a cidade" id="cidade" name="cidade" class="input">
+            <br><br>
+            <button id="btnCidade" name="btnCidade" onClick="ConsultarClima()">Consultar</button>
+            <br><br> 
+
+            <label for="tempmax" class="label">Temperatura Máxima:</label>
+            <input id="tempmax" name="tempmax" class="input" readonly="true">
+
+            <label for="tempmin" class="label">Temperatura Miníma:</label>
+            <input id="tempmin" name="tempmin" class="input" readonly="true">
+
+            <label for="clima" class="label">Clima:</label>
+            <input id="clima" name="clima" class="input" readonly="true">
+            <br>
+            <label>
+                <img id="iconeclima" style="height:75px; width:75px;" src="https://openweathermap.org/img/wn/10d@2x.png">
+            </label>
+
+            <label for="umidade" class="label">Umidade (em %):</label>
+            <input id="umidade" name="umidade" class="input" readonly="true">
+        </div>
+    </body>
+</html>
